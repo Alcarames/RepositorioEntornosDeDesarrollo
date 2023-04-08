@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import Edificios.Almacen;
 import Edificios.Fabrica;
 import Edificios.Oficina;
@@ -11,7 +12,14 @@ public class Start {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Bienvenido a la página de tu empresa");
+		String nombre = "";
+		
+		Scanner entradaDatos= new Scanner(System.in);
+		
+		System.out.println("Introduce tu nombre: ");
+		nombre = entradaDatos.nextLine();
+		
+		System.out.println("Bienvenido a la página de tu empresa, " + nombre);
 		
 		//Creación de la empresa
 		
